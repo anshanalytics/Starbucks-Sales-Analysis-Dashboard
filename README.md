@@ -177,6 +177,8 @@ Starbucks-Analysis-Dashboard/
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
-Built as a personal data analytics project to demonstrate Power BI dashboard design, DAX measure writing, and end-to-end data storytelling from raw transactional data to business insight.
+Ansh Sharma
+
+Skills: Data Analytics | Power BI | SQL | Excel | Python
