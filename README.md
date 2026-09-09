@@ -135,7 +135,7 @@ Starbucks-Analysis-Dashboard/
 │
 ├── README.md
 ├── Starbucks_Analysis_Dashboard.pbit # Power BI template file
-├── dataset/
+├── Starbucks_dataset
 │ ├── sales.csv # 10,000 transaction records
 │ ├── customers.csv # 500 customer records
 │ └── items.csv # 77 menu items with nutrition data
