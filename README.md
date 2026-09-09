@@ -134,15 +134,14 @@ This dashboard enables Starbucks store and operations teams to:
 Starbucks-Analysis-Dashboard/
 │
 ├── README.md
-├── Starbucks_Analysis_Dashboard.pbit   # Power BI template file
+├── Starbucks_Analysis_Dashboard.pbit # Power BI template file
 ├── dataset/
-│   ├── sales.csv                       # 10,000 transaction records
-│   ├── customers.csv                   # 500 customer records
-│   └── items.csv                       # 77 menu items with nutrition data
+│ ├── sales.csv # 10,000 transaction records
+│ ├── customers.csv # 500 customer records
+│ └── items.csv # 77 menu items with nutrition data
 ├── details_page.png
 ├── home_page.png
 └── overview_page.png
-
 
 ---
 
