@@ -103,4 +103,81 @@ The report is built on a clean star schema:
 - Average order value stays fairly stable (~$7.50–$8.50) across all hours, which means the swing in total revenue through the day is driven mainly by foot traffic, not basket size, reinforcing that staffing and traffic management matter more than upselling during off-peak hours.
 - Payment methods are almost evenly distributed (Card, Cash, UPI each ~33% of transactions), so no single payment channel dominates. This indicates that payment infrastructure and operational support should accommodate all three payment methods effectively.
 - Walk-in and mobile-app orders are nearly split 50/50, indicating the mobile channel has matured into an equally important ordering path, not a secondary one.
-- The dataset contains 500 customer
+- The dataset contains 500 customer records and 10,000 transactions, indicating potential repeat visitation. A distinct-customer transaction analysis can be used to quantify customer repeat behavior and support loyalty-focused strategies.
+
+---
+
+## 📈 Business Impact
+
+This dashboard enables Starbucks store and operations teams to:
+
+- Optimize staffing schedules around clearly identified peak hours instead of guesswork.
+- Design targeted promotions for low-traffic periods (like early-to-mid afternoon) to smooth out demand across the day.
+- Track performance against revenue, order, and customer targets through an interactive dashboard, instead of waiting on end-of-month reports.
+- Invest confidently in the mobile-app channel, backed by data showing it drives nearly half of all orders.
+- Resolve customer and payment disputes faster using the transaction-level Details page.
+- Cut manual reporting effort, since the dashboard can simply be refreshed from the source CSV files, updating all KPIs and the "Last Update" timestamp in one step.
+
+---
+
+## 🛠️ Tools Used
+
+- **Power Query** — data cleaning and transformation
+- **DAX** — KPI measures, targets, time intelligence, and conditional formatting
+- **Data Modeling** — star schema with fact and dimension tables
+- **Power BI** — interactive dashboards, slicers, navigation, and data visualization
+
+---
+
+## 📂 Project Structure
+
+Starbucks-Analysis-Dashboard/
+│
+├── README.md
+├── Starbucks_Analysis_Dashboard.pbit # Power BI template file
+├── dataset/
+│ ├── sales.csv # 10,000 transaction records
+│ ├── customers.csv # 500 customer records
+│ └── items.csv # 77 menu items with nutrition data
+├── details_page.png
+├── home_page.png
+└── overview_page.png
+
+
+---
+
+## 📸 Dashboard Preview
+
+### Home
+![Home Page](https://raw.githubusercontent.com/anshanalytics/Starbucks-Analysis-Dashboard/main/home_page.png)
+
+### Overview
+![Overview Page](https://raw.githubusercontent.com/anshanalytics/Starbucks-Analysis-Dashboard/main/overview_page.png)
+
+### Details
+![Details Page](https://raw.githubusercontent.com/anshanalytics/Starbucks-Analysis-Dashboard/main/details_page.png)
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download this repository.
+2. Open Starbucks_Analysis_Dashboard.pbit in Power BI Desktop.
+3. When prompted, point it to the dataset/ folder (sales.csv, customers.csv, items.csv) included in this repo.
+4. Let the data load: KPIs and charts will populate, and the "Last Update" timestamp will reflect the latest transaction datetime after the refresh.
+5. Navigate between Home → Overview → Details using the top navigation bar.
+
+---
+
+## 🔮 Future Enhancements
+
+- Add a menu/item performance page using the existing nutrition data (calories, fat, protein) to compare healthy vs. indulgent item sales.
+- Surface the built-in target and growth % measures visually (KPI cards with target lines, MoM growth trend charts).
+- Add a store-level comparison view using store_id to benchmark the 3 locations against each other.
+- Add a customer-type (walk-in vs. mobile-app) breakdown to quantify channel performance directly on the dashboard.
+
+---
+
+## 👤 Author
+
+Built as a personal data analytics project to demonstrate Power BI dashboard design, DAX measure writing, and end-to-end data storytelling from raw transactional data to business insight.
