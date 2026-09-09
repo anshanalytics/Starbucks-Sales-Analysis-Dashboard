@@ -131,7 +131,7 @@ This dashboard enables Starbucks store and operations teams to:
 
 ## 📂 Project Structure
 
-Starbucks-Analysis-Dashboard/
+Starbucks-Analysis-Dashboard
 │
 ├── README.md
 ├── Starbucks_Analysis_Dashboard.pbit # Power BI template file
