@@ -143,7 +143,6 @@ Starbucks-Analysis-Dashboard/
 ├── home_page.png
 └── overview_page.png
 
-
 ---
 
 ## 📸 Dashboard Preview
